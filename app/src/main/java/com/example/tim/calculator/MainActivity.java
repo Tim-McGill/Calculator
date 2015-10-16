@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     // nums
     double dNum1, dNum2, dAns;
     int nFun=0;
+
     //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         bDec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (sTemp.contains(".")==false){
+                if (!sTemp.contains(".")){
                     sTemp=sTemp+".";
                 }
                 tv.setText(sTemp);
@@ -198,15 +199,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(sTemp.length()>0) {
-                    if (sTemp.contains("Infinity")==false) {
+                    if (!sTemp.contains("Infinity")) {
                         sTemp = sTemp.substring(0, sTemp.length() - 1);
                         tv.setText(sTemp);
                     } else{
                         sTemp = "";
                         tv.setText(sTemp);
                     }
-                } else{
-
                 }
             }
         });
@@ -214,11 +213,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             //
             public void onClick(View v) {
-                if(sTemp.isEmpty()==false) {
-                    if (sTemp.contains("Infinity")==false) {
+                if(!sTemp.isEmpty()) {
+                    if (!sTemp.contains("Infinity")) {
                         sNum2 = sTemp;
                         sTemp = "";
-                        if (sNum1.isEmpty() == false) {
+                        if (!sNum1.isEmpty()) {
                             dNum1 = Double.parseDouble(sNum1);
                         } else {
                             nFun = 0;
