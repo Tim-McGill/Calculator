@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+// sorce for much of the code TheLazyTryhard Android App Development in Java - 3: Buttons and Textviews
+// www.youtube.com/watch?v=O6Tad0BlqUY&index=3&list=PLvnXjBkwUhDEfjK1pqT8LsGWPyFuzO5Zu
 public class MainActivity extends AppCompatActivity {
     // vars
     // buttons
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         // setting the text view
         tv = (TextView) findViewById(R.id.textView);
         // buttons listeners
+        // sorce TheLazyTryhard Android App Development in Java - 3: Buttons and Textviews
+        // www.youtube.com/watch?v=O6Tad0BlqUY&index=3&list=PLvnXjBkwUhDEfjK1pqT8LsGWPyFuzO5Zu
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
