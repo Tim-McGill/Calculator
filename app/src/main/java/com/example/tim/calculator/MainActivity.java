@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button bCE;
     Button bAns;
     Button bDelete;
+    //change
     // text and strings
     TextView tv;
     String sTemp="", sNum1="", sNum2="";
